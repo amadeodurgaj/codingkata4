@@ -16,7 +16,7 @@ session_start();
 <body>
 <!-- Header-Bereich mit Navigation -->
 <header>
-  <?php require_once("navbar.php") ?>
+  <?php use "navbar.php" ?>
 </header>
 
 <!-- Hauptinhalt -->
@@ -38,14 +38,14 @@ session_start();
     <div class="container">
       <h2>Unsere Vision</h2>
       <p>
-        TaskQuest ist eine gamifizierte Plattform, mit der du deinen Fortschritt in verschiedenen Lebensbereichen 
-        verfolgen kannst. Das Besondere dabei: Deine tägliche To-Do-Liste verwandelt sich in ein spannendes Abenteuer. 
+        TaskQuest ist eine gamifizierte Plattform, mit der du deinen Fortschritt in verschiedenen Lebensbereichen
+        verfolgen kannst. Das Besondere dabei: Deine tägliche To-Do-Liste verwandelt sich in ein spannendes Abenteuer.
         Sammle Erfahrungspunkte, steige im Level auf und bleib dauerhaft motiviert!
       </p>
 
       <h2>Wer wir sind</h2>
       <p>
-        Wir sind eine Gruppe begeisterter Informatik-Studierender, die moderne Technologien einsetzen, um 
+        Wir sind eine Gruppe begeisterter Informatik-Studierender, die moderne Technologien einsetzen, um
         Produktivität und Spaß zu vereinen. Unser Team setzt sich aus folgenden Mitgliedern zusammen:
       </p>
       <ul>
@@ -58,7 +58,7 @@ session_start();
 
       <h2>Was uns antreibt</h2>
       <p>
-        Unser Ziel ist es, allen Menschen zu helfen, ihre Ziele spielerisch zu erreichen. Wir glauben, dass 
+        Unser Ziel ist es, allen Menschen zu helfen, ihre Ziele spielerisch zu erreichen. Wir glauben, dass
         Gamification ein großer Motivationsfaktor sein kann, um Aufgaben besser zu meistern und Ziele nicht 
         aus den Augen zu verlieren.
       </p>

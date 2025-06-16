@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <header>
-        <?php require_once("navbar.php"); ?>
+        <?php require_once "navbar.php"; ?>
     </header>
     <div class="container mt-5">
         <h2>Dein Profil</h2>

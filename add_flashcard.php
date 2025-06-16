@@ -1,7 +1,6 @@
 <?php
 session_start();
-require_once 'dbconnect.php';
-
+use "dbconnect.php";
 // Prüfen ob User eingeloggt ist
 if (empty($_SESSION['userId'])) {
     header('Location: login.php');
@@ -37,4 +36,3 @@ try {
     echo "DB-Fehler: " . $e->getMessage();
     exit();
 }
-?>

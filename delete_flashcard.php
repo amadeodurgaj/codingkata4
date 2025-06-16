@@ -8,12 +8,14 @@ if (empty($_SESSION["userId"])) {
     exit();
 }
 
+$errorLink = "Location: flashcards.php?error=";
+
 $userId = $_SESSION["userId"];
 $cardId = $_GET['id'] ?? 0;
 
 // Validierung
 if (!$cardId) {
-    header("Location: flashcards.php?error=" . urlencode("Ungültige Karteikarten-ID."));
+    header($errorLink . urlencode("Ungültige Karteikarten-ID."));
     exit();
 }
 
@@ -24,7 +26,7 @@ try {
     $card = $stmt->fetch();
     
     if (!$card) {
-        header("Location: flashcards.php?error=" . urlencode("Karteikarte nicht gefunden oder keine Berechtigung."));
+        header($errorLink . urlencode("Karteikarte nicht gefunden oder keine Berechtigung."));
         exit();
     }
     
@@ -36,7 +38,7 @@ try {
     exit();
     
 } catch (PDOException $e) {
-    header("Location: flashcards.php?error=" . urlencode("Fehler beim Löschen der Karteikarte."));
+    header($errorLink . urlencode("Fehler beim Löschen der Karteikarte."));
     exit();
 }
 ?>

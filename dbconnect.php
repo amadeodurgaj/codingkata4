@@ -1,9 +1,9 @@
 <?php
-    $host = 'caboose.proxy.rlwy.net'; 
-    $port = 30701;
-    $dbname = 'railway';
-    $user = 'postgres';
-    $password = 'KHxoHQhdmkMMRlXoDVnmcNIgwEhWSgMu';
+    $host = '-'; 
+    $port = 1;
+    $dbname = '';
+    $user = '';
+    $password = '';
 
 try {
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
